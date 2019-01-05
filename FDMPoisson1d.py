@@ -43,7 +43,7 @@ u = dsolve.spsolve(Ah, b)
 # Plotting the solution u #
 ###########################
 
-x = np.arange(0.0, 1.0, 1/(J+2))
+x = np.linspace(0.0, 1.0, num=J+2)
 u = np.concatenate(([0], u, [0]))
 
 fig = plt.figure()
